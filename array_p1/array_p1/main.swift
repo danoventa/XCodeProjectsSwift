@@ -8,5 +8,7 @@
 
 import Foundation
 
-println("Hello, World!")
+var testArray = ["John", "Don", "Sally", "Pete"]
+var anotehrArray = [1, 5, 6, 7]
 
+println(testArray)
