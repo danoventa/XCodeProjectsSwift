@@ -8,6 +8,11 @@
 
 import Foundation
 
+var friend : String?
+if let someone = friend {
+    println("Hello " + someone)
+}
+
 var testArray = ["John", "Don", "Sally", "Pete", "Katie", "Lynda"]
 var anotherArray = [1, 5, 6, 7]
 var floatArray = [0.1, 1.5, 4.6]
@@ -15,6 +20,16 @@ var floatArray = [0.1, 1.5, 4.6]
 let countArray1 = testArray.count
 let countArray2 = anotherArray.count
 let countArray3 = floatArray.count
+
+for item in testArray {
+    println(item)
+}
+for item in anotherArray {
+    println(item)
+}
+for item in floatArray {
+    println(item)
+}
 
 println(countArray1)
 println(countArray2)
