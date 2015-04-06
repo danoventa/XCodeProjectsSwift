@@ -21,6 +21,11 @@ let countArray1 = testArray.count
 let countArray2 = anotherArray.count
 let countArray3 = floatArray.count
 
+testArray.append("Mammoth")
+anotherArray.append(333)
+floatArray.append(9.9)
+
+
 for item in testArray {
     println(item)
 }
