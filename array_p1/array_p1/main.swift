@@ -17,6 +17,11 @@ var testArray = ["John", "Don", "Sally", "Pete", "Katie", "Lynda"]
 var anotherArray = [1, 5, 6, 7]
 var floatArray = [0.1, 1.5, 4.6]
 
+// how to declare your array.
+var newTestArray : [String ] = ["words", "Word", "wordss"]
+var yetAnotherArray : [Int] = [1, 2, 3, 4, 5]
+var andFloatArray : [Float] = [1.1, 2.2, 3.3]
+
 let countArray1 = testArray.count
 let countArray2 = anotherArray.count
 let countArray3 = floatArray.count
@@ -36,6 +41,9 @@ println(testArray.reverse())
 println(anotherArray)
 println(anotherArray.reverse())
 
+println(newTestArray)
+println(yetAnotherArray)
+println(andFloatArray)
 
 for item in testArray {
     println(item)
