@@ -25,6 +25,8 @@ testArray.append("Mammoth")
 anotherArray.append(333)
 floatArray.append(9.9)
 
+testArray.removeLast()
+testArray.removeAtIndex(1)
 
 for item in testArray {
     println(item)
