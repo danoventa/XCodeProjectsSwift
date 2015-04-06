@@ -24,6 +24,13 @@ var andFloatArray : [Float] = [1.1, 2.2, 3.3]
 
 var multiDimensional : [[Int]] = [[1, 2, 3, 4], [1, 2, 3, 4]]
 
+anotherArray.sort {$0 > $1}
+println(anotherArray)
+
+anotherArray.sort {$1 > $0}
+println(anotherArray)
+
+
 println(multiDimensional)
 
 let countArray1 = testArray.count
@@ -62,3 +69,7 @@ for item in floatArray {
 println(countArray1)
 println(countArray2)
 println(countArray3)
+
+println(testArray.capacity)
+println(anotherArray.capacity)
+println(multiDimensional.capacity)
