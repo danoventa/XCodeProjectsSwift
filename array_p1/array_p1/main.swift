@@ -28,6 +28,15 @@ floatArray.append(9.9)
 testArray.removeLast()
 testArray.removeAtIndex(1)
 
+testArray.insert("NotDon", atIndex:1)
+testArray.insert("Donald", atIndex:4)
+
+println(testArray)
+println(testArray.reverse())
+println(anotherArray)
+println(anotherArray.reverse())
+
+
 for item in testArray {
     println(item)
 }
