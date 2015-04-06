@@ -22,6 +22,10 @@ var newTestArray : [String ] = ["words", "Word", "wordss"]
 var yetAnotherArray : [Int] = [1, 2, 3, 4, 5]
 var andFloatArray : [Float] = [1.1, 2.2, 3.3]
 
+var multiDimensional : [[Int]] = [[1, 2, 3, 4], [1, 2, 3, 4]]
+
+println(multiDimensional)
+
 let countArray1 = testArray.count
 let countArray2 = anotherArray.count
 let countArray3 = floatArray.count
