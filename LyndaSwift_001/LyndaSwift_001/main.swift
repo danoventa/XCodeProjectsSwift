@@ -8,5 +8,8 @@
 
 import Foundation
 
-println("Hello, World!")
+let city = "Caprica"
+var day = "Tuesday"
+var temp = 75
 
+println("The hihg for \(city) on \(day) is \(temp)")
