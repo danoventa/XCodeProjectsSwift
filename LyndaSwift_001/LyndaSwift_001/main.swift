@@ -8,6 +8,82 @@
 
 import Foundation
 
+class Player {
+    var name : String = "Jon"
+    var score : Int = 0
+    
+    func description() -> String {
+        return ("Player \(name) has score of \(score)")
+    }
+}
+
+var jake = Player()
+
+jake.name = "Jake"
+jake.score = 1000
+println(jake.description())
+
+let myClosure = {
+    println("This is my closure")
+}
+
+func performFiveTimes(myClosureParamater : ()-> () ){
+    for i in 1...5 {
+        myClosureParamater()
+    }
+}
+
+performFiveTimes(myClosure)
+
+performFiveTimes({
+    println("Performed Fine times")
+})
+
+func myFunc ()->(){
+    println("Magic")
+}
+
+var unsortedArray = [23, 123, 432, 12, 54, 75, 23, 76, 87, 234]
+let sortedArray = sorted(unsortedArray, {(first: Int, second:Int) -> Bool in return first < second})
+
+println(sortedArray)
+
+enum SeatPrefs {
+    case Window
+    case Table
+    case Magic
+    case Hoover
+    case NoCare
+}
+
+var me : SeatPrefs
+me = .Window
+
+var you = SeatPrefs.Magic
+
+switch you {
+case .Window:
+    println ("meh")
+case .Magic:
+    println("this")
+default:
+    println("whatevs")
+    
+}
+
+var temperature : Int?
+
+temperature = 65
+
+if temperature != nil {
+    println("The Temperature is \(temperature!)")
+}
+
+var dare = ["A" : "Air", "W" : "Wind"]
+if let result = dare["A"] {
+    println("the state name is \(result)")
+}
+
 func getTuple() -> (name:String, length:Int) { // name and length optional here
     return("Mania!", 11111111111)
 }
