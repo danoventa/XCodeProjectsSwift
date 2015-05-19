@@ -8,7 +8,11 @@
 
 import Foundation
 
-
+func getTuple() -> (name:String, length:Int) { // name and length optional here
+    return("Mania!", 11111111111)
+}
+let(name, length) = getTuple()
+println("The Son is \(name) and its \(length) years long")
 
 
 var states = ["AYE" : "Aye Aye Capn", "Oy" : "O-My-G", "BR" : "Im cold!"]
