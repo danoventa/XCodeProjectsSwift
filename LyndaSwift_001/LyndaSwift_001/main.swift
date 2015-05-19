@@ -9,18 +9,32 @@
 import Foundation
 
 class Player {
-    var name : String = "Jon"
-    var score : Int = 0
+    var name : String
+    var score : Int
     
     func description() -> String {
         return ("Player \(name) has score of \(score)")
     }
+
+    init() {
+        name = "Jake Blow"
+        score = 0
+    }
+    
+    init (name : String){
+        self.name = name
+        self.score = 0
+    }
+    
+    deinit {
+        // any code that died. 
+    }
 }
 
-var jake = Player()
 
-jake.name = "Jake"
-jake.score = 1000
+
+var jake = Player(name: "Alice")
+
 println(jake.description())
 
 let myClosure = {
