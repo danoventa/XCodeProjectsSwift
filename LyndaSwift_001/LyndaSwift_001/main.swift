@@ -8,6 +8,31 @@
 
 import Foundation
 
+extension String {
+    func reverseWords() -> String {
+        let wordsArray = self.componentsSeparatedByString(" ")
+        let reversedArray = wordsArray.reverse()
+        var newString = ""
+        for eachWord in reversedArray {
+            newString += eachWord + " "
+        }
+        return newString
+    }
+}
+
+let someString = "This is a string of my chosing"
+let words = someString.componentsSeparatedByString(" ")
+println(words)
+var message = "this is a magica string that only I know"
+println(message.reverseWords())
+
+var personalSite : String?
+let mySite = "http://www.lynda.com"
+
+var website = personalSite ?? mySite
+
+println(website)
+
 class Player {
     var name : String
     var score : Int
